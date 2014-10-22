@@ -9,6 +9,7 @@
 
     character = (Character*)[CCBReader load:@"Character"];   //will load a new Character from the CCB file
     [physicsNode addChild:character];                        //adds your character as a child of physicsNode so that physics will be applied to it.
+    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
@@ -22,9 +23,5 @@
     [character flap];
 }
 
--(void) addObstacle {
-    
-    [self addObstacle];
-}
 
 @end
